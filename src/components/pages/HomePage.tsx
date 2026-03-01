@@ -3,7 +3,6 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Award, Building2, Mail, MapPin, Menu, Phone, Shield, X } from 'lucide-react';
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Head from '@/components/Head';
 
 // --- Types & Interfaces ---
 interface Achievement {
@@ -94,11 +93,6 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="bg-background text-foreground min-h-screen overflow-x-clip selection:bg-primary selection:text-background font-paragraph">
-      <Head 
-        title="Khalsa Properties - Premium Real Estate in Pune | 500+ Properties Sold"
-        description="Khalsa Properties is Pune's premier RERA-certified real estate agency. 500+ properties sold, trusted by thousands. Expert guidance for buying, selling, and investing."
-        canonical="https://khalsaproperties.com"
-      />
       <style>{`
         .text-stroke {
           -webkit-text-stroke: 1px #DAA520;
@@ -242,19 +236,19 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="group relative px-8 py-4 bg-primary text-black font-heading font-bold overflow-hidden"
               >
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300">GET IN TOUCH</span>
                 <div className="absolute inset-0 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                to="/about"
                 className="group px-8 py-4 border border-primary text-primary font-heading font-bold hover:bg-primary hover:text-black transition-all duration-300"
               >
                 LEARN MORE
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -453,21 +447,18 @@ export default function HomePage() {
             {/* Contact Form Visual */}
             <div className="bg-zinc-900/50 p-8 md:p-12 border border-primary/20 backdrop-blur-sm">
               <h3 className="font-heading text-3xl text-white mb-8">Send an Inquiry</h3>
-              <div className="w-full overflow-hidden rounded-lg">
-                <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSe8R2UtmOfNke1rfTgxaKGIO_4dmIewS6tG6CinCYIPgDkbug/viewform?embedded=true"
-                  width="100%"
-                  height="700"
-                  frameBorder="0"
-                  marginHeight={0}
-                  marginWidth={0}
-                  className="w-full"
-                  title="Contact Form"
-                  style={{ minHeight: '700px' }}
-                >
-                  Loading…
-                </iframe>
-              </div>
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe8R2UtmOfNke1rfTgxaKGIO_4dmIewS6tG6CinCYIPgDkbug/viewform?embedded=true"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                className="w-full"
+                title="Contact Form"
+              >
+                Loading…
+              </iframe>
             </div>
 
           </div>
