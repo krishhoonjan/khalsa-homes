@@ -105,7 +105,6 @@ export default function HomePage() {
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         }
       `}</style>
-
       {/* --- Navigation --- */}
       <nav className="fixed top-0 left-0 right-0 z-50 mix-blend-difference px-6 py-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="font-heading text-2xl md:text-3xl text-primary tracking-tighter z-50">
@@ -177,7 +176,6 @@ export default function HomePage() {
           </motion.div>
         )}
       </nav>
-
       {/* --- Hero Section --- */}
       <section id="home" className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         {/* Background Parallax Layer */}
@@ -201,9 +199,7 @@ export default function HomePage() {
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-paragraph text-primary text-sm md:text-base tracking-[0.2em] mb-4 uppercase"
-            >
-              Pune's Premier Real Estate
-            </motion.p>
+            >Pune's Premier Fake Estate</motion.p>
           </div>
 
           <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tighter mb-8">
@@ -268,9 +264,7 @@ export default function HomePage() {
           <div className="w-[1px] h-16 bg-gradient-to-b from-primary to-transparent" />
         </motion.div>
       </section>
-
       <SectionDivider />
-
       {/* --- Achievements Section (Horizontal Scroll / Grid) --- */}
       <section className="w-full bg-background py-24 md:py-32 relative overflow-hidden">
         {/* Decorative Background Elements */}
@@ -324,7 +318,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- About / Why Choose Us (Sticky Layout) --- */}
       <section id="about" className="w-full bg-zinc-950 relative">
         <div className="max-w-[120rem] mx-auto">
@@ -390,7 +383,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- Marquee Section --- */}
       <div className="py-12 bg-primary overflow-hidden whitespace-nowrap flex">
         <motion.div
@@ -406,7 +398,6 @@ export default function HomePage() {
           ))}
         </motion.div>
       </div>
-
       {/* --- Contact Section --- */}
       <section id="contact" className="w-full py-24 md:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-primary/10" />
@@ -499,7 +490,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- Footer --- */}
       <footer className="w-full bg-black border-t border-primary/20 py-12">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
