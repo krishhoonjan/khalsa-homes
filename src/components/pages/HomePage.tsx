@@ -439,7 +439,7 @@ export default function HomePage() {
                   <h4 className="font-paragraph text-sm text-gray-500 uppercase tracking-widest mb-2">Email Us</h4>
                   <a href="mailto:ajaysingh1269@gmail.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors">
                     <Mail className="w-8 h-8 md:w-10 md:h-10" />
-                    info@khalsaproperties.com
+                    ajaysingh1269@gmail.com
                   </a>
                 </div>
 
