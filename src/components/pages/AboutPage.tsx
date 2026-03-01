@@ -103,7 +103,6 @@ export default function AboutPage() {
           </motion.div>
         )}
       </nav>
-
       {/* Hero Section */}
       <section id="about" className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 pt-32 pb-24 md:pt-48 md:pb-32">
         <motion.div
@@ -120,7 +119,6 @@ export default function AboutPage() {
           </p>
         </motion.div>
       </section>
-
       {/* Story Section */}
       <section className="w-full py-24 md:py-32">
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24">
@@ -155,17 +153,11 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="absolute -inset-4 bg-primary opacity-20 blur-2xl"></div>
-              <Image
-                src="https://static.wixstatic.com/media/011e47_80959c60858b40b8b886f40df28b61f7~mv2.png?originWidth=576&originHeight=448"
-                alt="Khalsa Properties team and office"
-                width={600}
-                className="relative w-full h-auto border border-primary"
-              />
+
             </motion.div>
           </div>
         </div>
       </section>
-
       {/* Values Section */}
       <section className="w-full py-24 md:py-32 bg-background">
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24">
@@ -209,7 +201,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* Stats Section */}
       <section className="w-full py-24 md:py-32">
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24">
@@ -261,7 +252,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="w-full py-24 md:py-32 bg-background">
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24">
@@ -287,7 +277,6 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="w-full bg-black border-t border-primary/20 py-12">
         <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
