@@ -21,7 +21,7 @@ interface ServicePoint {
 const ACHIEVEMENTS_DATA: Achievement[] = [
   {
     icon: Building2,
-    count: '1000+',
+    count: '500+',
     label: 'Properties Sold',
     description: 'Successfully delivered dream homes to families across Pune.'
   },
@@ -236,7 +236,7 @@ export default function HomePage() {
             className="max-w-xl"
           >
             <p className="text-gray-300 text-lg md:text-xl mb-12 leading-relaxed">
-              We don't just sell properties; we deliver dreams. With over 1000+ properties sold, we are the unyielding foundation of trust in Pune.
+              We don't just sell properties; we deliver dreams. With over 500+ properties sold, we are the unyielding foundation of trust in Pune.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6">
