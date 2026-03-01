@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { Target, Users, TrendingUp, Heart, Menu, X } from 'lucide-react';
 import { Image } from '@/components/ui/image';
-import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Heart, Menu, Target, TrendingUp, Users, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function AboutPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -252,7 +252,7 @@ export default function AboutPage() {
               className="text-center border border-primary p-8 md:p-12"
             >
               <h3 className="font-heading text-5xl md:text-6xl text-primary mb-4">
-                5000+
+                500+
               </h3>
               <p className="font-paragraph text-base md:text-lg text-foreground">
                 Satisfied Clients & Families
