@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Heart, Menu, Target, TrendingUp, Users, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Head from '@/components/Head';
 
 export default function AboutPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,6 +33,11 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Head 
+        title="About Khalsa Properties - Pune's Premier Real Estate Agency"
+        description="Learn about Khalsa Properties - RERA certified, 500+ properties sold, trusted by thousands. Our mission, values, and expertise in Pune real estate."
+        canonical="https://khalsaproperties.com/about"
+      />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-primary px-6 py-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="font-heading text-2xl md:text-3xl text-primary tracking-tighter z-50">
