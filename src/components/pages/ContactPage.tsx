@@ -1,42 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Menu, X } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { useToast } from '@/hooks/use-toast';
 import { Link } from 'react-router-dom';
 
 export default function ContactPage() {
-  const { toast } = useToast();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    toast({
-      title: 'Message Sent Successfully!',
-      description: 'Thank you for contacting Khalsa Properties. We will get back to you shortly.',
-    });
-
-    setFormData({ name: '', email: '', phone: '' });
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
 
   const contactInfo = [
     {
@@ -194,77 +162,35 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Google Form Section */}
       <section className="w-full py-16 md:py-24">
         <div className="max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-            {/* Form */}
+            {/* Google Form Embed */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
+              className="w-full"
             >
               <h2 className="font-heading text-4xl md:text-5xl text-primary mb-8">
                 SEND US A MESSAGE
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block font-heading text-base text-foreground mb-3">
-                    NAME *
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full bg-background border-2 border-primary text-foreground font-paragraph px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block font-heading text-base text-foreground mb-3">
-                    EMAIL *
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full bg-background border-2 border-primary text-foreground font-paragraph px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block font-heading text-base text-foreground mb-3">
-                    PHONE NUMBER *
-                  </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full bg-background border-2 border-primary text-foreground font-paragraph px-4 py-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-primary text-primary-foreground font-heading text-base px-8 py-4 font-bold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+              <div className="w-full bg-background border-2 border-primary p-6 md:p-8">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfBRY2kCJjUn1JT4D8/viewform?embedded=true"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  className="w-full"
+                  title="Contact Form"
                 >
-                  {isSubmitting ? 'SENDING...' : 'SUBMIT'}
-                </button>
-              </form>
+                  Loading…
+                </iframe>
+              </div>
             </motion.div>
 
             {/* Additional Info */}
