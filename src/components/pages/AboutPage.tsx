@@ -37,35 +37,35 @@ export default function AboutPage() {
         <Link to="/" className="font-heading text-2xl md:text-3xl text-primary tracking-tighter z-50">
           KHALSA<span className="text-white">.</span>
         </Link>
-        
+
         <div className="hidden md:flex gap-8 items-center">
-          <Link 
+          <Link
             to="/"
             className="font-heading text-sm text-foreground hover:text-primary transition-colors uppercase tracking-widest"
           >
             HOME
           </Link>
-          <Link 
+          <Link
             to="/about"
             className="font-heading text-sm text-primary transition-colors uppercase tracking-widest"
           >
             ABOUT
           </Link>
-          <Link 
+          <Link
             to="/contact"
             className="font-heading text-sm text-foreground hover:text-primary transition-colors uppercase tracking-widest"
           >
             CONTACT
           </Link>
-          <a 
-            href="tel:+919595953333" 
+          <a
+            href="tel:+919595953333"
             className="border border-primary text-primary px-6 py-2 font-heading text-xs hover:bg-primary hover:text-black transition-all duration-300"
           >
             +91 959595 3333
           </a>
         </div>
 
-        <button 
+        <button
           className="md:hidden text-primary z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -74,26 +74,26 @@ export default function AboutPage() {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-8"
           >
-            <Link 
+            <Link
               to="/"
               onClick={() => setIsMenuOpen(false)}
               className="font-heading text-4xl text-primary hover:text-white transition-colors"
             >
               HOME
             </Link>
-            <Link 
+            <Link
               to="/about"
               onClick={() => setIsMenuOpen(false)}
               className="font-heading text-4xl text-primary hover:text-white transition-colors"
             >
               ABOUT
             </Link>
-            <Link 
+            <Link
               to="/contact"
               onClick={() => setIsMenuOpen(false)}
               className="font-heading text-4xl text-primary hover:text-white transition-colors"
@@ -222,7 +222,7 @@ export default function AboutPage() {
               className="text-center border border-primary p-8 md:p-12"
             >
               <h3 className="font-heading text-5xl md:text-6xl text-primary mb-4">
-                1000+
+                500+
               </h3>
               <p className="font-paragraph text-base md:text-lg text-foreground">
                 Properties Successfully Delivered
