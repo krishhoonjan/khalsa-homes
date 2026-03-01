@@ -447,7 +447,7 @@ export default function HomePage() {
                   <h4 className="font-paragraph text-sm text-gray-500 uppercase tracking-widest mb-2">Visit Us</h4>
                   <div className="flex items-start gap-4 font-paragraph text-xl text-gray-300">
                     <MapPin className="w-8 h-8 text-primary shrink-0 mt-1" />
-                    <p>Khalsa Properties HQ,<br />Pune, Maharashtra, India</p>
+                    <p>Khalsa Properties ,<br />Wanowrie, Jagtap Chowk, Pune</p>
                   </div>
                 </div>
               </div>
