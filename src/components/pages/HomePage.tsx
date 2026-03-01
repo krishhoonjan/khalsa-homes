@@ -447,44 +447,18 @@ export default function HomePage() {
             {/* Contact Form Visual */}
             <div className="bg-zinc-900/50 p-8 md:p-12 border border-primary/20 backdrop-blur-sm">
               <h3 className="font-heading text-3xl text-white mb-8">Send an Inquiry</h3>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="space-y-2">
-                  <label className="font-paragraph text-sm text-primary uppercase tracking-wider">Name</label>
-                  <input
-                    type="text"
-                    className="w-full bg-black border-b border-primary/30 focus:border-primary text-white p-4 outline-none transition-colors font-paragraph"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="font-paragraph text-sm text-primary uppercase tracking-wider">Email</label>
-                  <input
-                    type="email"
-                    className="w-full bg-black border-b border-primary/30 focus:border-primary text-white p-4 outline-none transition-colors font-paragraph"
-                    placeholder="Enter your email address"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="font-paragraph text-sm text-primary uppercase tracking-wider">Phone</label>
-                  <input
-                    type="tel"
-                    className="w-full bg-black border-b border-primary/30 focus:border-primary text-white p-4 outline-none transition-colors font-paragraph"
-                    placeholder="+91 ..."
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="font-paragraph text-sm text-primary uppercase tracking-wider">Message</label>
-                  <textarea
-                    rows={4}
-                    className="w-full bg-black border-b border-primary/30 focus:border-primary text-white p-4 outline-none transition-colors font-paragraph resize-none"
-                    placeholder="Tell us about your property needs..."
-                  />
-                </div>
-                <button className="w-full bg-primary text-black font-heading font-bold py-6 mt-8 hover:bg-white transition-colors uppercase tracking-widest flex items-center justify-center gap-2 group">
-                  Send Message
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </form>
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe8R2UtmOfNke1rfTgxaKGIO_4dmIewS6tG6CinCYIPgDkbug/viewform?embedded=true"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                className="w-full"
+                title="Contact Form"
+              >
+                Loading…
+              </iframe>
             </div>
 
           </div>
