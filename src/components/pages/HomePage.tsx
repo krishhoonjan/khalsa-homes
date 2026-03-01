@@ -1,8 +1,7 @@
 import { Image } from '@/components/ui/image';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
-import { ArrowRight, Award, Building2, Mail, MapPin, Menu, Phone, Shield, X } from 'lucide-react';
-import React, { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Award, Building2, Mail, MapPin, Phone, Shield } from 'lucide-react';
+import React, { useRef } from 'react';
 import Head from '@/components/Head';
 
 // --- Types & Interfaces ---
@@ -86,8 +85,6 @@ export default function HomePage() {
     offset: ["start start", "end end"]
   });
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   // Parallax effects
   const heroY = useTransform(scrollYProgress, [0, 0.2], ["0%", "50%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -111,77 +108,7 @@ export default function HomePage() {
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         }
       `}</style>
-      {/* --- Navigation --- */}
-      <nav className="fixed top-0 left-0 right-0 z-50 mix-blend-difference px-6 py-6 md:px-12 flex justify-between items-center">
-        <Link to="/" className="font-heading text-2xl md:text-3xl text-primary tracking-tighter z-50">
-          KHALSA<span className="text-white">.</span>
-        </Link>
-
-        <div className="hidden md:flex gap-8 items-center">
-          <Link
-            to="/"
-            className="font-heading text-sm text-white hover:text-primary transition-colors uppercase tracking-widest"
-          >
-            HOME
-          </Link>
-          <Link
-            to="/about"
-            className="font-heading text-sm text-white hover:text-primary transition-colors uppercase tracking-widest"
-          >
-            ABOUT
-          </Link>
-          <Link
-            to="/contact"
-            className="font-heading text-sm text-white hover:text-primary transition-colors uppercase tracking-widest"
-          >
-            CONTACT
-          </Link>
-          <a
-            href="tel:+919595953333"
-            className="border border-primary text-primary px-6 py-2 font-heading text-xs hover:bg-primary hover:text-black transition-all duration-300"
-          >
-            +91 959595 3333
-          </a>
-        </div>
-
-        <button
-          className="md:hidden text-primary z-50"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X /> : <Menu />}
-        </button>
-
-        {/* Mobile Menu Overlay */}
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-8"
-          >
-            <Link
-              to="/"
-              onClick={() => setIsMenuOpen(false)}
-              className="font-heading text-4xl text-primary hover:text-white transition-colors"
-            >
-              HOME
-            </Link>
-            <Link
-              to="/about"
-              onClick={() => setIsMenuOpen(false)}
-              className="font-heading text-4xl text-primary hover:text-white transition-colors"
-            >
-              ABOUT
-            </Link>
-            <Link
-              to="/contact"
-              onClick={() => setIsMenuOpen(false)}
-              className="font-heading text-4xl text-primary hover:text-white transition-colors"
-            >
-              CONTACT
-            </Link>
-          </motion.div>
-        )}
-      </nav>
+      
       {/* --- Hero Section --- */}
       <section id="home" className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         {/* Background Parallax Layer */}
@@ -205,7 +132,7 @@ export default function HomePage() {
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-paragraph text-primary text-sm md:text-base tracking-[0.2em] mb-4 uppercase"
-            >Pune's Premier Fake Estate</motion.p>
+            >Pune's Premier Real Estate</motion.p>
           </div>
 
           <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tighter mb-8">
@@ -270,8 +197,10 @@ export default function HomePage() {
           <div className="w-[1px] h-16 bg-gradient-to-b from-primary to-transparent" />
         </motion.div>
       </section>
+      
       <SectionDivider />
-      {/* --- Achievements Section (Horizontal Scroll / Grid) --- */}
+      
+      {/* --- Achievements Section --- */}
       <section className="w-full bg-background py-24 md:py-32 relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute top-0 right-0 w-1/3 h-full border-l border-primary/10 hidden lg:block" />
@@ -324,6 +253,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
       {/* --- About / Why Choose Us (Sticky Layout) --- */}
       <section id="about" className="w-full bg-zinc-950 relative">
         <div className="max-w-[120rem] mx-auto">
@@ -375,7 +305,7 @@ export default function HomePage() {
 
               {/* Visual Breaker Image in Flow */}
               <div className="h-[60vh] w-full relative overflow-hidden">
-                 <Image
+                <Image
                   src="https://static.wixstatic.com/media/011e47_2c388867e23e4837bd99c1aa2f58d954~mv2.png?originWidth=1152&originHeight=896"
                   alt="Pune Skyline"
                   className="w-full h-full object-cover"
@@ -389,6 +319,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
       {/* --- Marquee Section --- */}
       <div className="py-12 bg-primary overflow-hidden whitespace-nowrap flex">
         <motion.div
@@ -404,6 +335,7 @@ export default function HomePage() {
           ))}
         </motion.div>
       </div>
+      
       {/* --- Contact Section --- */}
       <section id="contact" className="w-full py-24 md:py-32 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-primary/10" />
@@ -473,22 +405,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* --- Footer --- */}
-      <footer className="w-full bg-black border-t border-primary/20 py-12">
-        <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-center md:text-left">
-            <h2 className="font-heading text-2xl text-white mb-2">KHALSA PROPERTIES</h2>
-            <p className="font-paragraph text-xs text-gray-500">© {new Date().getFullYear()} All Rights Reserved.</p>
-          </div>
-          <div className="flex gap-8">
-            {['Privacy Policy', 'Terms of Service', 'RERA Compliance'].map((link) => (
-              <a key={link} href="#" className="font-paragraph text-xs text-gray-500 hover:text-primary transition-colors">
-                {link}
-              </a>
-            ))}
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
