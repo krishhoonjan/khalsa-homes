@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Head from '@/components/Head';
 
 export default function ContactPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,11 +35,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Head 
-        title="Contact Khalsa Properties - Get in Touch | Pune Real Estate"
-        description="Contact Khalsa Properties for expert real estate consultation. Call +91 959595 3333 or fill our contact form. Available Mon-Sat, 9 AM - 7 PM."
-        canonical="https://khalsaproperties.com/contact"
-      />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-primary px-6 py-6 md:px-12 flex justify-between items-center">
         <Link to="/" className="font-heading text-2xl md:text-3xl text-primary tracking-tighter z-50">
@@ -183,17 +177,16 @@ export default function ContactPage() {
               <h2 className="font-heading text-4xl md:text-5xl text-primary mb-8">
                 SEND US A MESSAGE
               </h2>
-              <div className="w-full bg-background border-2 border-primary p-6 md:p-8 rounded-lg overflow-hidden">
+              <div className="w-full bg-background border-2 border-primary p-6 md:p-8">
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSe8R2UtmOfNke1rfTgxaKGIO_4dmIewS6tG6CinCYIPgDkbug/viewform?embedded=true"
                   width="100%"
-                  height="700"
+                  height="600"
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
                   className="w-full"
                   title="Contact Form"
-                  style={{ minHeight: '700px' }}
                 >
                   Loading…
                 </iframe>
