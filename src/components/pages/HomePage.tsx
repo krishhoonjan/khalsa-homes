@@ -524,9 +524,9 @@ export default function HomePage() {
 
                 <div className="group">
                   <h4 className="font-paragraph text-sm text-gray-500 uppercase tracking-widest mb-4">Email Us</h4>
-                  <a href="mailto:info@khalsaproperties.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors break-all">
+                  <a href="mailto:ajaysingh1269@gmail.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors break-all">
                     <Mail className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0" />
-                    info@khalsaproperties.com
+                    ajaysingh1269@gmail.com
                   </a>
                 </div>
 
