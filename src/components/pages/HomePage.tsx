@@ -250,7 +250,7 @@ export default function HomePage() {
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-paragraph text-primary text-sm md:text-base tracking-[0.2em] mb-4 uppercase"
-            >Pune's Premier Fake Estate</motion.p>
+            >Pune's Premier Real Estate</motion.p>
           </div>
 
           <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tighter mb-8">
