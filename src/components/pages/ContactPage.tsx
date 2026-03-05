@@ -16,8 +16,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: 'Email',
-      details: 'info@khalsaproperties.com',
-      link: 'mailto:info@khalsaproperties.com'
+      details: 'krishhoonjan7788@gmail.com',
+      link: 'mailto:krishhoonjan7788@gmail.com'
     },
     {
       icon: MapPin,
@@ -179,7 +179,7 @@ export default function ContactPage() {
               </h2>
               <div className="w-full bg-background border-2 border-primary p-6 md:p-8">
                 <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSe8R2UtmOfNke1rfTgxaKGIO_4dmIewS6tG6CinCYIPgDkbug/viewform?embedded=true"
+                  src="https://forms.gle/JXc7oDuvjdCyGqnJ6"
                   width="100%"
                   height="600"
                   frameBorder="0"
