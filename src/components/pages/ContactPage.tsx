@@ -179,7 +179,7 @@ export default function ContactPage() {
               </h2>
               <div className="w-full bg-background border-2 border-primary p-6 md:p-8">
                 <iframe
-                  src="https://forms.gle/JXc7oDuvjdCyGqnJ6"
+                  src="https://forms.gle/UTVUmgAjeKtQwbER8"
                   width="100%"
                   height="600"
                   frameBorder="0"

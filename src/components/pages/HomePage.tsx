@@ -559,7 +559,7 @@ export default function HomePage() {
               <h3 className="font-heading text-3xl text-white mb-8">Send an Inquiry</h3>
               <div className="w-full overflow-hidden rounded-lg">
                 <iframe
-                  src="https://forms.gle/iyN3aRtsU3r7nnyD7"
+                  src="https://forms.gle/UTVUmgAjeKtQwbER8"
                   width="100%"
                   height="800"
                   frameBorder="0"
