@@ -250,7 +250,7 @@ export default function HomePage() {
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-paragraph text-primary text-sm md:text-base tracking-[0.2em] mb-4 uppercase"
-            >Pune's Premier Real Estate</motion.p>
+            >Pune's Premier Real Estate</motion.p>
           </div>
 
           <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tighter mb-8">
@@ -524,9 +524,9 @@ export default function HomePage() {
 
                 <div className="group">
                   <h4 className="font-paragraph text-sm text-gray-500 uppercase tracking-widest mb-4">Email Us</h4>
-                  <a href="mailto:ajaysingh1269@gmail.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors break-all">
+                  <a href="mailto:krishhoonjan7788@gmail.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors break-all">
                     <Mail className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0" />
-                    ajaysingh1269@gmail.com
+                    krishhoonjan7788@gmail.com
                   </a>
                 </div>
 
@@ -559,7 +559,7 @@ export default function HomePage() {
               <h3 className="font-heading text-3xl text-white mb-8">Send an Inquiry</h3>
               <div className="w-full overflow-hidden rounded-lg">
                 <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSe8R2UtmOfNke1rfTgxaKGIO_4dmIewS6tG6CinCYIPgDkbug/viewform?embedded=true"
+                  src="https://forms.gle/iyN3aRtsU3r7nnyD7"
                   width="100%"
                   height="800"
                   frameBorder="0"
