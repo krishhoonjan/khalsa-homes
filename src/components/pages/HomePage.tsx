@@ -1,7 +1,7 @@
 import { Image } from '@/components/ui/image';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
-import { Award, Building2, Mail, MapPin, Menu, Phone, Shield, X, Heart, Target, TrendingUp, Users } from 'lucide-react';
-import React, { useRef, useState, useEffect } from 'react';
+import { Award, Building2, Heart, Mail, MapPin, Menu, Phone, Shield, Target, TrendingUp, Users, X } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
 
 // --- Types & Interfaces ---
 interface Achievement {
@@ -524,9 +524,9 @@ export default function HomePage() {
 
                 <div className="group">
                   <h4 className="font-paragraph text-sm text-gray-500 uppercase tracking-widest mb-4">Email Us</h4>
-                  <a href="mailto:krishhoonjan7788@gmail.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors break-all">
+                  <a href="mailto:ajaysingh1269@gmail.com" className="flex items-center gap-4 font-heading text-2xl md:text-4xl text-white group-hover:text-primary transition-colors break-all">
                     <Mail className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0" />
-                    krishhoonjan7788@gmail.com
+                    ajaysingh1269@gmail.com
                   </a>
                 </div>
 
